@@ -2,6 +2,8 @@
 
 :root{
     --primary_color: #F80046;
+    --white: #FFF;
+    --logo_font: 'Agbalumo';
 }
 
 body{
@@ -11,6 +13,10 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 16px;
+}
+
+.revert{
+    all: revert;
 }
 
 .homepage{
@@ -26,7 +32,7 @@ body{
 
 
 .title{
-    font-family: 'Agbalumo';
+    font-family: var(--logo_font);
     color: var(--primary_color);
     font-size: 600%;
 }
@@ -45,12 +51,108 @@ body{
     border-radius: 5px;
     padding: 15px;
     background-color: var(--primary_color);
-    color: #FFF;
+    color: var(--white);
     font-size: 105%;
+}
+
+.searchbtn:hover{
+    cursor: pointer;
 }
 
 input:focus, textarea:focus {
     outline: none;
     border: var(--primary_color) solid 2px;
+}
 
-  }
+.topbar{
+    background-color: var(--primary_color);
+    padding: 5px;
+    display: flex;
+    width: 100%;
+   
+}
+
+.topbar_logo{
+    font-family: var(--logo_font);
+    margin: 0;
+    padding: 0;
+    margin-left: 2%;
+}
+
+.logo_btn{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.topbar_logo:hover{
+    cursor: pointer;
+}
+
+
+.topbar_search{
+    border: lightgray 2px solid;
+    border-radius: 5px;
+    padding: 2px;
+    width: 35%;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.topbar_searchbtn{
+    background-color: var(--white);
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    padding: 2px;
+    width: 5%;
+    margin-left: 2px;
+    
+}
+
+.topbar_searchbtn:hover{
+    cursor: pointer;
+}
+
+/* Form Container */
+
+.form-container{
+  width: 93%;
+  margin: 20px auto;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.form-container label{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-container input[type="email"],
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="file"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Form container button*/
+.form-container button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #E30613;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

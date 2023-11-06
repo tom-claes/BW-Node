@@ -11,6 +11,26 @@ module.exports = router  // Dit laat ons toe om onze router te importeren in onz
 router.get('/', (req, res) => {
     const filePath = path.join(__dirname, '../../public/HTML/homepage.html');
     res.sendFile(filePath);
-  })
+})
+
+router.get('/searchresults', (req, res) => {
+  const filePath = path.join(__dirname, '../../public/HTML/searchresultpage.html');
+  res.sendFile(filePath);
+})
+
+router.get('/artists', (req, res) => {
+  const filePath = path.join(__dirname, '../../public/HTML/artistpage.html');
+  res.sendFile(filePath);
+})
+
+router.get('/concerts', (req, res) => {
+  const filePath = path.join(__dirname, '../../public/HTML/concertpage.html');
+  res.sendFile(filePath);
+})
+
+router.get('/festivals', (req, res) => {
+  const filePath = path.join(__dirname, '../../public/HTML/festivalpage.html');
+  res.sendFile(filePath);
+})
 
   
