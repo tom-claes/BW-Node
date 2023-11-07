@@ -33,4 +33,11 @@ router.get('/festivals', (req, res) => {
   res.sendFile(filePath);
 })
 
+router.get('/add', (req, res) => {
+  const filePath = path.join(__dirname, '../../public/HTML/adddata.html');
+  res.sendFile(filePath);
+})
+
+
+
   

@@ -19,6 +19,10 @@ body{
     all: revert;
 }
 
+.workpage{
+    margin: 3%;
+}
+
 .homepage{
     background-image: url('../IMG/concert_img.jpg');
 
@@ -112,6 +116,62 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
+.botbar{
+    position: fixed;
+    background-color: var(--primary_color);
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.botbar_link{
+    color: var(--white);
+    text-decoration: none; 
+    font-size: 0.8em;   
+}
+
+.botbar_link:hover{
+    cursor: pointer;
+}
+
+.form_highlight{
+    color: var(--primary_color);
+    font-family: var(--logo_font);
+    font-style: italic;
+}
+
+.dataform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dataform_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+.dataform_field{
+    margin-top: 0.75%;
+}
+
+.hidden{
+    display: none;
+}
+
+.show_form_btn{
+    all: revert;
+    background-color: var(--primary_color);
+    color: var(--white);
+    border: var(--primary_color) solid 2px;
+    border-radius: 5px;
+
+}
+
 /* Form Container */
 
 .form-container{
@@ -156,3 +216,66 @@ input:focus, textarea:focus {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* MAPS */
+.sb-title {
+    position: relative;
+    top: -12px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+  }
+
+  .sb-title-icon {
+    position: relative;
+    top: -5px;
+  }
+
+  .card-container {
+    display: flex;
+    height: 500px;
+    width: 600px;
+  }
+
+  .panel {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .half-input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .half-input {
+    max-width: 120px;
+  }
+
+  .map {
+    width: 300px;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  input {
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  input:focus::placeholder {
+    color: white;
+  }

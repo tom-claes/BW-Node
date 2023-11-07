@@ -20,10 +20,10 @@ exports.up = function(db, callback) {
       id INT AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(255) UNIQUE NOT NULL,
       location VARCHAR(255) NOT NULL,
-      date DATE NOT NULL,
+      start_date DATE NOT NULL,
+      end_date DATE NOT NULL,
       start_time TIME NOT NULL,
       end_time TIME NOT NULL
-
     );
   `, callback);
 };

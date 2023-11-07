@@ -18,7 +18,6 @@ exports.up = function(db, callback) {
   db.runSql(`
     CREATE TABLE concerts (
       id INT AUTO_INCREMENT PRIMARY KEY,
-      name VARCHAR(255) UNIQUE NOT NULL,
       artist_id INT NOT NULL,
       location VARCHAR(255) NOT NULL,
       date DATE NOT NULL,

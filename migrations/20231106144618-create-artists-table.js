@@ -18,7 +18,8 @@ exports.up = function(db, callback) {
   db.runSql(`
     CREATE TABLE artists (
       id INT AUTO_INCREMENT PRIMARY KEY,
-      stagename VARCHAR(255) UNIQUE NOT NULL
+      stagename VARCHAR(255) UNIQUE NOT NULL,
+      image_path VARCHAR(255) NOT NULL
     );
   `, callback);
 };
